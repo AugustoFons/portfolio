@@ -1,0 +1,21 @@
+npx create-next-app @latest ./ 13.4.11 - ts si - eslint No - tailwind si - src no appRouter si - alias no..
+
+-  npm install @headlessui/react cloudinary jsonwebtoken @types/jsonwebtoken graphql-request next-auth
+	@headlessui/react : interfaz de usuario -- cloudinary: carga de img , jsonwebtoken @types/jsonwebtoken, graphql-request, next-auth
+   npm install @grafbase/sdk --save-dev :: acelera el flujo de trabajo con la base grafica
+
+1- eliminar carpetas app, public .. crear de nuevo app con page.tsx y una funcion por default, probar ejecucion "npm run dev" (se crea solo el layout.tsx)
+Copiar la carpeta oublic del drive y la config del globalcss, tailwind.config y common.types.ts
+
+2- carpeta componentes.. nav..footer..armar estructura layout min19
+
+3- carpeta constant --> copiar archivos -- mapear navlinks en el nav
+
+4- ir a https://grafbase.com/ .. registrar con github .. configurar grafbase sdk. npx grafbase init --config-format typescript 41 . crear el schema.
+subir repo a github ... ir a grafbase -> crear nuevo proyecto , buscar el repo importar + deploy
+-Ir al boton connect en grafbase, en el proyecto crear un .env -- NEXT_PUBLIC_GRAFBASE_API_URL -> pegar api url
+							       -- NEXT_PUBLIC_GRAFBASE_API_KEY -> pegar api key
+Si vamos a pathfinder ya vemos el schema
+
+5- crear lib/actions.ts , correr la conexion local a la db npx grafbase@0.24 dev --> copiar el endpoint y pegarlo en la logiaca del action
+puedo usar la url de Pathfinder: local para ver los schemas 1:32

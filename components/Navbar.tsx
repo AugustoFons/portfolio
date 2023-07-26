@@ -18,7 +18,7 @@ const Navbar = () => {
 
                     <ul className='flex text-base font-semibold py-4 lg:py-0 xl:text-lg gap-7 lg:gap-16 justify-center'> {/* xl:flex hidden text-small gap-7 */}
                         {NavLinks.map((link) => (
-                            <div className='w-max'>
+                            <div key={link.key} className='w-max'>
                                 <Link href={link.href} key={link.key}>
                                     {link.text}
                                 </Link>

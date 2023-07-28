@@ -48,10 +48,6 @@ body {
   @apply md:text-5xl text-3xl font-extrabold text-left max-w-5xl w-full;
 }
 
-.no-result-text {
-  @apply w-full text-center my-10 px-2;
-}
-
 /* Project Details */
 .user-actions_section {
   @apply fixed max-md:hidden flex gap-4 flex-col right-10 top-20;
@@ -163,4 +159,9 @@ body {
 /* Profile Projects */
 .profile_projects {
   @apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-5;
+}
+
+.filterColor:hover {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(70%) saturate(363%) hue-rotate(357deg) brightness(103%) contrast(103%);
+  cursor: pointer;
 }

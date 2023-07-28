@@ -10,7 +10,7 @@ export const projectsQuery = `
     edges {
         node {
         title
-        github
+        gitHub
         description
         siteUrl
         id
@@ -21,3 +21,43 @@ export const projectsQuery = `
     }
 }
 `;
+
+/***EJ QUERY CREATE***/
+/* 
+
+    mutation ProjectCreate {
+    projectCreate(input: {
+        category: "full stack",
+        description: "blog",
+        gitHub: "https://github.com/AugustoFons",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1690513403/programandoBlog_ajjdnk.jpg",
+        siteUrl: "https://programandoblog.vercel.app/",
+        title: "programandoBlog"
+    }){
+        project {
+        title
+        description
+        image
+        siteUrl
+        gitHub
+        category
+        id
+        }
+    }
+    }
+*/
+
+/***EJ QUERY GET***/
+/* 
+
+    query ProjectCollection {
+    projectCollection(first: 8){
+        edges{
+        node {
+            title
+        }
+        }
+    }
+    }
+
+*/

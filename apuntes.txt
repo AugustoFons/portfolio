@@ -18,4 +18,8 @@ subir repo a github ... ir a grafbase -> crear nuevo proyecto , buscar el repo i
 Si vamos a pathfinder ya vemos el schema
 
 5- crear lib/actions.ts , correr la conexion local a la db npx grafbase@0.24 dev --> copiar el endpoint y pegarlo en la logiaca del action
-puedo usar la url de Pathfinder: local para ver los schemas 1:32
+puedo usar la url de Pathfinder: local para ver los schemas 2:32
+
+6- cuenta de cloudinary y ver como subir fotos ok!
+
+7-armar el fetchAllProjects en lib actions & el query para el get en graphql/index.ts 3:06

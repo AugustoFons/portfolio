@@ -8,7 +8,7 @@ const Navbar = () => {
                 <div className='w-full flex justify-center'>
                     <Link href='/'>
                         <Image
-                        src='/logo.png'
+                        src='/lg.png'
                         width={200}
                         height={100}
                         alt='Augusto Fons'
@@ -19,7 +19,7 @@ const Navbar = () => {
                     <ul className='flex text-base font-semibold py-4 lg:py-0 xl:text-lg gap-7 lg:gap-16 justify-center'> {/* xl:flex hidden text-small gap-7 */}
                         {NavLinks.map((link) => (
                             <div key={link.key} className='w-max'>
-                                <Link href={link.href} key={link.key}>
+                                <Link href={link.href} key={link.key} className='filterColor'>
                                     {link.text}
                                 </Link>
                             </div>

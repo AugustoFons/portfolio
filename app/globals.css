@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Caveat Brush');
-@import url('https://fonts.googleapis.com/css?family=Caveat');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
 @tailwind base;
 @tailwind components;
@@ -40,7 +40,10 @@ body {
   font-family: 'Caveat Brush'
 }
 .fuenteTexto {
-  font-family: 'Caveat'
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 ::-webkit-scrollbar {
@@ -174,4 +177,19 @@ body {
   filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
   cursor: pointer;
   /* #FFB000 */
+}
+
+.animacion {
+  transform: rotateY(0deg);
+  animation: animacion 8s;
+  animation-direction: alternate;
+}
+
+@keyframes animacion {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }

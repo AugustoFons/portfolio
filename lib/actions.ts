@@ -1,4 +1,4 @@
-import { projectsQuery } from "@/graphql";
+import { getProjectByIdQuery, projectsQuery } from "@/graphql";
 import { GraphQLClient } from "graphql-request";
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -20,4 +20,10 @@ export const fetchAllProjects = async (category?: string, endcursor?: string) =>
     client.setHeader('x-api-key', apiKey);
 
     return makeGraphQLRequest(projectsQuery, { category, endcursor})
+}
+
+export const getProjectId = (id: string) => {
+    client.setHeader('x-api-key', apiKey);
+
+    return makeGraphQLRequest(getProjectByIdQuery, { id })
 }

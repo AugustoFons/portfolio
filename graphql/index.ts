@@ -22,6 +22,20 @@ export const projectsQuery = `
 }
 `;
 
+export const getProjectByIdQuery = `
+    query GetProjectById($id: ID!) {
+    project(by: { id: $id }) {
+        id
+        title
+        description
+        image
+        siteUrl
+        gitHub
+        category
+    }
+    }
+`;
+
 /***EJ QUERY CREATE***/
 /* 
 

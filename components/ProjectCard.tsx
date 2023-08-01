@@ -18,10 +18,10 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id}
                 <h1 className="fuenteTitulo text-5xl text-center">Proyectos:</h1>
                 <Image 
                 src='/line1.png'
-                width={100}
+                width={116}
                 height={80}
                 alt="line"
-                className="mr-6 mt-1"
+                className="mr-10 mt-1"
                 />
             </div>
             <div className="flexCenter flex-col rounded-2xl group bg-stone-100 hover:shadow-[#ffae007a] hover:shadow-2xl">
@@ -35,7 +35,7 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id}
                     />
 
                     <div className="hidden group-hover:flex profile_card-title">
-                        <p className="w-full">{title}</p>
+                        <p className="w-full fuenteTexto">{title}</p>
                     </div>
                 </Link>
 
@@ -49,12 +49,12 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id}
                             alt="github"
                             className="rounded-full"
                             />
-                            <p className="font-semibold text-xs text-slate-500 group-hover:text-slate-700">{category}</p>
+                            <p className="font-semibold text-xs text-slate-500 group-hover:text-slate-700 fuenteTexto">{category}</p>
                         </div>
                     </Link>
 
                     <div className="flexCenter">
-                        <div className="flexCenter flex-col ">
+                        <div className="flexCenter">
                             <Image
                             src="/deployment.png"
                             width={26}
@@ -62,8 +62,7 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id}
                             alt="deploy"
                             className="filterColor"
                             />
-    {/*                         <p className="text-sm ">deploy</p>
-    */}                    </div>
+                        </div>
                     </div>
                 </div>
             </div>

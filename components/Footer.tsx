@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Footer = () => {
     return (
-        <footer className='flexStart footer'>
+        <footer className='flexStart footer lg:px-20 py-4 px-5'>
             <div className='flex flex-col gap-5 w-full'>
                 <div className='flex flex-col items-start'>
                     <Image

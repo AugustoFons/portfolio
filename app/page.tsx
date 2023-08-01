@@ -30,7 +30,7 @@ const Home = async () => {
     }
 
     return (
-        <section className="flex-start flex-col paddings mb-16">
+        <section className="flex-start flex-col lg:px-20 py-4 px-5 mb-16">
             <AboutMe />
             
             <section className="projects-grid">

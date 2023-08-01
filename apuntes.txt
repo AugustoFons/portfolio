@@ -22,4 +22,7 @@ puedo usar la url de Pathfinder: local para ver los schemas 2:32
 
 6- cuenta de cloudinary y ver como subir fotos ok!
 
-7-armar el fetchAllProjects en lib actions & el query para el get en graphql/index.ts 3:06
+7-armar el fetchAllProjects en lib actions & el query para el get en graphql/index.ts 3:24
+
+8-Modal:
+useCallback:: es una función proporcionada por React que se utiliza para optimizar el rendimiento al trabajar con componentes funcionales. Permite memoizar una función y evitar que se vuelva a crear en cada renderizado del componente, a menos que sus dependencias cambien

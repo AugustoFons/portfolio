@@ -1,19 +1,7 @@
-import { ProjectInterface } from "@/common.types";
+import { ProjectSearch, ProjectInterface } from "@/common.types";
 import AboutMe from "@/components/AboutMe";
 import ProjectCard from "@/components/ProjectCard";
 import { fetchAllProjects } from "@/lib/actions";
-
-type ProjectSearch = {
-    projectSearch: {
-        edges: { node: ProjectInterface}[];
-        pageInfo: {
-            hasPreviousPage: boolean;
-            hasNextPage: boolean;
-            startCursor: string;
-            endCursor: string;
-        }
-    }
-}
 
 const Home = async () => {
     const data = await fetchAllProjects() as ProjectSearch
@@ -47,7 +35,6 @@ const Home = async () => {
                     />
                 ))}
             </section>
-
         </section>
     )
 }

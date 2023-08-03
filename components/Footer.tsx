@@ -1,5 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
+
 const Footer = () => {
     return (
         <footer className='flexStart footer lg:px-20 py-4 px-5'>

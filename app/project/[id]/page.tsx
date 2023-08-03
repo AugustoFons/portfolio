@@ -27,7 +27,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             <section className="mt-2 group">
                     <Image
                         src={`${projectId?.image}`}
-                        className="object-cover rounded-2xl lg:group-hover:blur-md  lg:group-hover:scale-y-75"
+                        className="object-cover rounded-2xl lg:group-hover:blur-md "
                         width={964}
                         height={620}
                         alt="portada"

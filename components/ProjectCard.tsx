@@ -1,21 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Props } from "@/common.types";
 
-type Props = {
-    title: string;
-    description: string;
-    image: string;
-    siteUrl: string;
-    gitHub: string;
-    category: string;
-    id: string;
-}
 
 const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id}: Props) => {
     return (
         <section>
             <div className="flex flex-col items-center mb-4">
-                <h1 className="fuenteTitulo text-5xl text-center">Proyectos:</h1>
+                <h1 id="proyectos" className="fuenteTitulo text-5xl text-center">Proyectos:</h1>                
                 <Image 
                 src='/line1.png'
                 width={116}
@@ -34,8 +26,19 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id}
                     className="w-ful h-full rounded-2xl object-cover"
                     />
 
-                    <div className="hidden group-hover:flex profile_card-title">
+                    <div className="hidden group-hover:flex group-hover:flex-col card-title">
                         <p className="w-full fuenteTexto">{title}</p>
+                        <div className="flex justify-start w-full">
+                            <p className="w-full fuenteTexto font-light text-xs flex items-center">Ver descripcion
+                            <Image 
+                                src='/clic.png'
+                                width={20}
+                                height={20}
+                                alt="pointer"
+                                className="-rotate-12 left-10"
+                                />
+                            </p>
+                        </div>
                     </div>
                 </Link>
 
@@ -52,19 +55,21 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id}
                             <p className="font-semibold text-xs text-slate-500 group-hover:text-slate-700 fuenteTexto">{category}</p>
                         </div>
                     </Link>
-
                     <div className="flexCenter">
-                        <div className="flexCenter">
-                            <Image
-                            src="/deployment.png"
-                            width={26}
-                            height={26}
-                            alt="deploy"
-                            className="filterColor"
-                            />
-                        </div>
+                        <Link href={siteUrl}>
+                            <div className="flexCenter">
+                                <Image
+                                src="/deployment.png"
+                                width={26}
+                                height={26}
+                                alt="deploy"
+                                className="filterColor"
+                                />
+                            </div>
+                        </Link>
                     </div>
                 </div>
+
             </div>
         </section>
     )

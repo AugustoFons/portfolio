@@ -19,6 +19,7 @@ export type Props = {
     gitHub: string;
     category: string;
     id: string;
+    order: number;
 }
 
 export interface ProjectInterface {
@@ -29,4 +30,5 @@ export interface ProjectInterface {
     gitHub: string;
     category: string;
     id: string;
+    order: number;
 }

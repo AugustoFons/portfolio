@@ -16,6 +16,7 @@ export const projectsQuery = `
         id
         image
         category
+        order
         }
     }
     }
@@ -32,6 +33,7 @@ export const getProjectByIdQuery = `
         siteUrl
         gitHub
         category
+        order
     }
     }
 `;

@@ -32,6 +32,7 @@ const Home = async () => {
                     siteUrl={node?.siteUrl}
                     gitHub={node?.gitHub}
                     category={node?.category}
+                    order={node?.order}
                     />
                 ))}
             </section>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Props } from "@/common.types";
 
 
-const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id}: Props) => {
+const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id, order}: Props) => {
     return (
         <section>
             <div className="flex flex-col items-center mb-4">

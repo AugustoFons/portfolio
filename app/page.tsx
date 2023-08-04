@@ -7,7 +7,7 @@ import Image from "next/image";
 const Home = async () => {
     const data = await fetchAllProjects() as ProjectSearch
 
-    const projectsView = data?.projectSearch?.edges || [];
+    const projectsView = data?.projectSearch?.edges;
 
     if(projectsView.length === 0) {
         return (

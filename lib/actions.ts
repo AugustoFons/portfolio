@@ -16,11 +16,11 @@ const makeGraphQLRequest = async (query: string, variables = {}) => {
     }
 }
 
-export const fetchAllProjects = async () => {
-    client.setHeader('x-api-key', apiKey);
 
-    return makeGraphQLRequest(projectsQuery)
-}
+export const fetchAllProjects = (category?: string | null, endcursor?: string | null) => {
+    client.setHeader("x-api-key", apiKey);
+    return makeGraphQLRequest(projectsQuery, { category, endcursor });
+};
 
 export const getProjectId = (id: string) => {
     client.setHeader('x-api-key', apiKey);

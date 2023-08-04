@@ -77,3 +77,17 @@ export const getProjectByIdQuery = `
     }
 
 */
+
+/* UPDATE
+	mutation UpdateProject($id: ID!) {
+		projectUpdate(by: { id: $id }, input: {
+        title: "Encriptador"
+    }) {
+			project {
+				id
+				title
+				description
+			}
+		}
+	}
+*/

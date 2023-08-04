@@ -14,8 +14,8 @@ const Modal = ({ children }: { children: ReactNode }) => {
 
     return (
         <div className="modal swing-in-top-fwd">
-            <button type="button" onClick={back} className="absolute top-12 right-8 z-10">
-                <Image src="/close.svg" width={27} height={27} alt="close" />
+            <button type="button" onClick={back} className="absolute top-8 md:top-10 right-5 z-10">
+                <Image src="/cerrar.png" width={38} height={38} alt="close" />
             </button>
 
             <div className="modal_wrapper">

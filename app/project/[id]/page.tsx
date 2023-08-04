@@ -18,7 +18,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
 
     return (
         <Modal>
-            <section className='flex items-center px-7 py-3 md:h-40 h-20 rounded-lg mt-7' style={{
+            <section className='flex items-center px-7 py-3 md:h-40 h-20 rounded-lg mt-5 xs:mt-2' style={{
                     backgroundImage: `url('/fondoTitulo.png')`,
                     backgroundSize: ' 100% 91%',
                     backgroundRepeat: 'no-repeat',
@@ -69,11 +69,11 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             </section>
 
             <section className="flexCenter flex-col mt-4">
-                <p className="max-w-5xl text-xl font-normal fuenteTexto">
+                <p className="max-w-5xl text-base lg:text-lg font-normal fuenteTexto">
                     {projectId?.description}
                 </p>
 
-                <div className="flex flex-wrap mt-5 gap-5 group-hover:scale-150 group-hover:-translate-y-96 z-10">
+                <div className="flex flex-col sm:flex-row mt-5 gap-2 xs:gap-5 group-hover:scale-150 group-hover:-translate-y-96 z-10">
                     <Link href={`${projectId?.gitHub}`}>
                         <div className="flexCenter gap-1 filterColor">
                             <Image
@@ -86,9 +86,9 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                             <p className="font-semibold text-xs text-slate-500 group-hover:text-slate-700 fuenteTexto">Repositorio</p>
                         </div>
                     </Link>
-                    <Image src="/dot.svg" width={6} height={6} alt="dot" className='mx-12' />
+                    <Image src="/dot.svg" width={6} height={6} alt="dot" className='hidden sm:flex md:mx-12' />
                     <Link href={`${projectId?.siteUrl}`} className=""> 
-                    <div className="flexCenter gap-1 filterColor">
+                    <div className="flex gap-1 filterColor">
                             <Image
                             src="/deployment.png"
                             width={36}

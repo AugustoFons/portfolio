@@ -15,8 +15,8 @@ const MenuMobile = () => {
                 <Menu.Button className="flexCenter" onClick={() => {setOpen(!open)}} >
                     <Image 
                         src='/menu.png'
-                        width={48}
-                        height={48}
+                        width={50}
+                        height={50}
                         alt='Boton menu'
                         className={open ? '-rotate-45' : ''}
                         />

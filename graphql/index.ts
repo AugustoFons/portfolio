@@ -49,6 +49,7 @@ export const getProjectByIdQuery = `
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1690513403/programandoBlog_ajjdnk.jpg",
         siteUrl: "https://programandoblog.vercel.app/",
         title: "programandoBlog"
+        order: 4
     }){
         project {
         title

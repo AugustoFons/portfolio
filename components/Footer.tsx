@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='flex flex-col gap-5 w-full'>
                 <div className='flex flex-col items-start'>
                     <Image
-                        src='/logo.png'
+                        src='/lg.png'
                         width={150}
                         height={100}
                         alt='Augusto Fons'

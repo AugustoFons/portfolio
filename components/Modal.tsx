@@ -13,7 +13,7 @@ const Modal = ({ children }: { children: ReactNode }) => {
     }, [router]);
 
     return (
-        <div className="modal">
+        <div className="modal swing-in-top-fwd">
             <button type="button" onClick={back} className="absolute top-12 right-8 z-10">
                 <Image src="/close.svg" width={27} height={27} alt="close" />
             </button>

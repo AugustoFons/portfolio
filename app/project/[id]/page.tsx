@@ -18,8 +18,12 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
 
     return (
         <Modal>
-            <section className='w-full'>
-                    <p className='text-center text-2xl fuenteTitulo uppercase tracking-wider'>
+            <section className='flex items-center px-7 py-3 md:h-40 h-20 rounded-lg mt-7' style={{
+                    backgroundImage: `url('/fondoT.png')`,
+                    backgroundSize: ' 100% 91%',
+                    backgroundRepeat: 'no-repeat',
+                    }}>
+                    <p className='text-center text-3xl fuenteTitulo mb-5 tracking-wider z-10'>
                         {projectId?.title}
                     </p>
             </section>
@@ -27,9 +31,9 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             <section className="mt-2 group">
                     <Image
                         src={`${projectId?.image}`}
-                        className="object-cover rounded-2xl lg:group-hover:blur-md "
-                        width={964}
-                        height={620}
+                        className="object-cover rounded-2xl lg:group-hover:blur-md"
+                        width={1000}
+                        height={563}
                         alt="portada"
                         />
                         

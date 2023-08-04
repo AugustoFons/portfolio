@@ -7,7 +7,7 @@ const Project = g.model('Project', {
   siteUrl: g.url(),
   gitHub: g.url(),
   category: g.string().search(),
-  order: g.string()
+  order: g.int()
 })
 
 export default config({

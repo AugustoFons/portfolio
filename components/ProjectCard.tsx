@@ -6,15 +6,6 @@ import { Props } from "@/common.types";
 const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id, order}: Props) => {
     return (
         <section>
-            <div className="flex flex-col items-center mb-4">
-                <Image 
-                src='/line1.png'
-                width={116}
-                height={80}
-                alt="line"
-                className="mr-10 mt-1"
-                />
-            </div>
             <div className="flexCenter flex-col rounded-2xl group bg-stone-100 hover:shadow-[#ffae007a] hover:shadow-2xl">
                 <Link href={`/project/${id}`} className="flexCenter group relative w-full h-full">
                     <Image

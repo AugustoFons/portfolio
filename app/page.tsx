@@ -22,19 +22,22 @@ const Home = async () => {
             <AboutMe />
             
             <section className="projects-grid">
-                {projectsView.map(({ node } : { node: ProjectInterface }) => (
-                    <ProjectCard 
-                    key={node?.id}
-                    id={node?.id}
-                    title={node?.title}
-                    description={node?.description}
-                    image={node?.image}
-                    siteUrl={node?.siteUrl}
-                    gitHub={node?.gitHub}
-                    category={node?.category}
-                    order={node?.order}
-                    />
-                ))}
+                <div>
+                    <h1 id="proyectos" className="fuenteTitulo text-5xl text-center">Proyectos:</h1>                
+                    {projectsView.map(({ node } : { node: ProjectInterface }) => (
+                        <ProjectCard 
+                        key={node?.id}
+                        id={node?.id}
+                        title={node?.title}
+                        description={node?.description}
+                        image={node?.image}
+                        siteUrl={node?.siteUrl}
+                        gitHub={node?.gitHub}
+                        category={node?.category}
+                        order={node?.order}
+                        />
+                    ))}
+                </div>
             </section>
         </section>
     )

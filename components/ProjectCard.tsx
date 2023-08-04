@@ -7,7 +7,6 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id,
     return (
         <section>
             <div className="flex flex-col items-center mb-4">
-                <h1 id="proyectos" className="fuenteTitulo text-5xl text-center">Proyectos:</h1>                
                 <Image 
                 src='/line1.png'
                 width={116}

@@ -35,20 +35,24 @@ const Home = async () => {
             </div>
 
             <section className="projects-grid">
-                    {projectsView.map(({ node } : { node: ProjectInterface }) => (
+                {projectsView
+                    .sort((a, b) => b.node.order - a.node.order) // Ordena los proyectos en orden descendente según el número de order
+                    .map(({ node }: { node: ProjectInterface }) => (
                         <ProjectCard 
-                        key={node?.id}
-                        id={node?.id}
-                        title={node?.title}
-                        description={node?.description}
-                        image={node?.image}
-                        siteUrl={node?.siteUrl}
-                        gitHub={node?.gitHub}
-                        category={node?.category}
-                        order={node?.order}
+                            key={node?.id}
+                            id={node?.id}
+                            title={node?.title}
+                            description={node?.description}
+                            image={node?.image}
+                            siteUrl={node?.siteUrl}
+                            gitHub={node?.gitHub}
+                            category={node?.category}
+                            order={node?.order}
                         />
                     ))}
             </section>
+
+
         </section>
     )
 }

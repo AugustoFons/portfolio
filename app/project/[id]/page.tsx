@@ -19,7 +19,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
     return (
         <Modal>
             <section className='flex items-center px-7 py-3 md:h-40 h-20 rounded-lg mt-7' style={{
-                    backgroundImage: `url('/fondoT.png')`,
+                    backgroundImage: `url('/fondoTitulo.png')`,
                     backgroundSize: ' 100% 91%',
                     backgroundRepeat: 'no-repeat',
                     }}>
@@ -69,7 +69,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             </section>
 
             <section className="flexCenter flex-col mt-4">
-                <p className="max-w-5xl text-xl font-normal">
+                <p className="max-w-5xl text-xl font-normal fuenteTexto">
                     {projectId?.description}
                 </p>
 

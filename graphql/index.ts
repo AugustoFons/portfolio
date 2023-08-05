@@ -1,6 +1,6 @@
 export const projectsQuery = `
     query getProjects {
-    projectSearch(first: 8) {
+    projectSearch(first: 20) {
     pageInfo {
         hasNextPage
         hasPreviousPage

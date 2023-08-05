@@ -174,3 +174,8 @@
     opacity: 1;
   }
 }
+
+.linkA a {
+  color: rgb(255, 128, 0);
+  font-weight: 600;
+}

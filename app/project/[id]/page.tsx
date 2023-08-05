@@ -3,6 +3,7 @@ import Modal from '@/components/Modal';
 import { getProjectId } from '@/lib/actions'
 import Image from 'next/image'
 import  Link  from 'next/link'
+import Linkify from "linkify-react";
 
 const Project = async ({ params: { id } }: { params: { id: string } }) => {
 
@@ -69,9 +70,10 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             </section>
 
             <section className="flexCenter flex-col mt-4">
-                <p className="max-w-5xl text-base lg:text-lg font-medium fuenteTexto">
+
+                <Linkify as="p" className="max-w-5xl text-base lg:text-lg font-medium fuenteTexto linkA">
                     {projectId?.description}
-                </p>
+                </Linkify>
 
                 <div className="flex flex-col sm:flex-row mt-5 gap-2 xs:gap-5 group-hover:scale-150 group-hover:-translate-y-96 z-10">
                     <Link href={`${projectId?.gitHub}`}>
@@ -88,7 +90,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                     </Link>
                     <Image src="/dot.svg" width={6} height={6} alt="dot" className='hidden sm:flex md:mx-12' />
                     <Link href={`${projectId?.siteUrl}`} className=""> 
-                    <div className="flex gap-1 filterColor">
+                    <div className="flexCenter gap-1 filterColor">
                             <Image
                             src="/deployment.png"
                             width={36}

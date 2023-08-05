@@ -4,6 +4,10 @@ import ProjectCard from "@/components/ProjectCard";
 import { fetchAllProjects } from "@/lib/actions";
 import Image from "next/image";
 
+export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+export const revalidate = 0;
+
 const Home = async () => {
     const data = await fetchAllProjects() as ProjectSearch
 
@@ -12,7 +16,6 @@ const Home = async () => {
     if(projectsView.length === 0) {
         return (
             <section className="flexStart flex-col paddings w-full text-center my-10 px-2">
-                Categories
                 <p>No projects found</p>
             </section>
         )

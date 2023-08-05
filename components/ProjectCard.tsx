@@ -16,10 +16,10 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id,
                     className="w-ful h-full rounded-2xl object-cover"
                     />
 
-                    <div className="flex flex-col md:hidden md:group-hover:flex group-hover:flex-col card-title">
+                    <div className="flex flex-col card-title">
                         <p className="w-full fuenteTexto">{title}</p>
                         <div className="flex justify-start w-full">
-                            <p className="w-full fuenteTexto font-light text-xs flex items-center">Ver descripcion
+                            <p className="w-full fuenteTexto font-light text-xs flex items-center md:hidden md:group-hover:flex">Ver descripcion
                             <Image 
                                 src='/clic.png'
                                 width={20}

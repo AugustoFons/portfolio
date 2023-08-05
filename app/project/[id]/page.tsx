@@ -18,12 +18,12 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
 
     return (
         <Modal>
-            <section className='flex items-center px-7 py-3 md:h-40 h-20 rounded-lg mt-5 xs:mt-2' style={{
+            <section className='flex items-center px-7 py-4 md:h-40 h-20 rounded-lg mt-5 xs:mt-2' style={{
                     backgroundImage: `url('/fondoTitulo.png')`,
                     backgroundSize: ' 100% 91%',
                     backgroundRepeat: 'no-repeat',
                     }}>
-                    <p className='text-center text-3xl fuenteTitulo mb-5 tracking-wider z-10'>
+                    <p className='text-center text-3xl fuenteTitulo mb-4 tracking-wider z-10'>
                         {projectId?.title}
                     </p>
             </section>
@@ -69,7 +69,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             </section>
 
             <section className="flexCenter flex-col mt-4">
-                <p className="max-w-5xl text-base lg:text-lg font-normal fuenteTexto">
+                <p className="max-w-5xl text-base lg:text-lg font-medium fuenteTexto">
                     {projectId?.description}
                 </p>
 

@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image"
+import Typewriter from 'react-ts-typewriter';
 
 const AboutMe = () => {
 
@@ -26,8 +28,12 @@ const AboutMe = () => {
                             quality="100"
                             />  
                 </div>
-                <p className="justify-center mt-1 py-1 lg:py-0 fuenteTexto text-base lg:text-lg hyphens-auto">
-                    Hola! Me llamo Augusto Fons, tengo 25 años y me dedico al Desarrollo Web Full Stack. Actualmente estoy radicado en La Ciudad de La Plata, Buenos Aires Argentina. He realizado una Diplomatura en Desarrollo Web Full Stack en Academia Numen, ademas me he capacitado en el uso de varias tecnologias tanto de programación como de marketing digital, soporte tecnico, excel, entre otras. Anteriormente he completado tambien estudios como Tecnico en Sonido y Grabacion. En este portfolio me gustaria que conozcan los proyectos en los que he estado trabajando y con los que continuo aprendiendo hoy en dia.
+                <p className="justify-center indent-1 py-1 text lg:py-1 text-base lg:text-lg hyphens-auto fuenteTexto">
+                ¡Hola! me llamo Augusto Fons, soy desarrollador web Full Stack, vivo en La ciudad de La Plata, Argentina. Apasionado por la programación y la creación de soluciones digitales. En este portfolio me gustaría compartirles varios de los proyectos en los que he estado trabajando, y con los que aprendo día a día. Actualmente me interesa ser parte de proyectos y oportunidades en las cuales pueda potenciar, desarrollar y aplicar mis conocimientos y habilidades. Para saber más sobre mí, pueden descargar mi CV o ver mis redes que dejaré en la sección de contacto.
+                </p>
+                
+                <p className="indent-1 py-1 lg:py-0 text-base lg:text-lg font-bold text-start fuenteTexto rounded-lg ">
+                    <Typewriter text='¡Gracias por visitar mi portfolio!' />
                 </p>
             </div>
 

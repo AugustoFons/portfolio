@@ -2,6 +2,7 @@ import { ProjectSearch, ProjectInterface } from "@/common.types";
 import AboutMe from "@/components/AboutMe";
 import Cv from "@/components/Cv";
 import ProjectCard from "@/components/ProjectCard";
+import Redes from "@/components/Redes";
 import { fetchAllProjects } from "@/lib/actions";
 import Image from "next/image";
 
@@ -58,6 +59,7 @@ const Home = async () => {
 
             <section className="flexCenter">
                 <Cv />
+                <Redes />
             </section>
 
 

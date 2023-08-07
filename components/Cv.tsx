@@ -9,7 +9,7 @@ const Cv = () => {
                 backgroundRepeat: 'no-repeat',
                 }}>
                     <div>
-                        <h1 id="proyectos" className="fuenteTitulo text-4xl md:text-5xl  text-center mt-8 xs:mt-8 group-hover:pb-2">Descargar <br />CV</h1>
+                        <h1 className="fuenteTitulo text-4xl md:text-5xl  text-center mt-8 xs:mt-8 group-hover:pb-2">Descargar <br />CV</h1>
                     </div>
             <Image 
                     src='/flechacv.png'

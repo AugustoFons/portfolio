@@ -32,5 +32,15 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.filterColorCv': {
+          filter: 'brightness(0) saturate(100%) invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%)',
+          cursor: 'pointer'
+        },
+      };
+      addUtilities(newUtilities, ['group-hover'], ['group-valid']);
+    },
+  ],
 };

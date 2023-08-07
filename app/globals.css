@@ -118,16 +118,22 @@
   }
 
 /* Media query para pantallas con un ancho menor a 320px */
-@media (max-width: 320px) {
+@media (max-width: 520px) {
   .responsiveMob {
     transform: scale(0.55);
     position: relative;
-    bottom: 40px;
+    bottom: 0px;
+    filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
   }
   .cv {
     min-height: 300px;
     max-height: 380px;
     padding-top: 100px;
+  }
+}
+@media (max-width: 320px) {
+  .responsiveMob {
+    filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
   }
 }
 /* hover links */

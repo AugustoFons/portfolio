@@ -104,6 +104,32 @@
   }
 }
 
+/* CV */
+
+
+  .cv {
+    height: 590px;
+    min-height: 540px;
+    max-width: 520px;
+    background-image: url('/cuadernoFondo.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+/* Media query para pantallas con un ancho menor a 320px */
+@media (max-width: 320px) {
+  .responsiveMob {
+    transform: scale(0.55);
+    position: relative;
+    bottom: 40px;
+  }
+  .cv {
+    min-height: 300px;
+    max-height: 380px;
+    padding-top: 100px;
+  }
+}
 /* hover links */
 
 .linkBorder {

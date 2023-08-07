@@ -33,7 +33,7 @@ const Home = async () => {
                     width={116}
                     height={80}
                     alt="line"
-                    className="mr-8 mt-1"
+                    className="ml-3 mt-1"
                     />
                 </div>
             </div>

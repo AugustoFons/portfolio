@@ -9,7 +9,7 @@ const AboutMe = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setCursorOptions(false);
-        }, 4000);
+        }, 3500);
     
         // Limpiar el temporizador cuando el componente se desmonta
         return () => clearTimeout(timer);

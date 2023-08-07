@@ -58,7 +58,7 @@ const Home = async () => {
                     ))}
             </section>
 
-            <section className="flex flex-col md:flex-row md:justify-center items-center md:items-start">
+            <section className="flex flex-col md:flex-row flexCenter justify-center items-center gap-48 my-4">
                 <Cv />
                 <Formulario />
             </section>

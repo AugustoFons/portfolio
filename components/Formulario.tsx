@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Redes from './Redes'
 const Formulario = () => {
     return (
-        <section className="relative py-4 mt-7 sm:max-w-xl sm:mx-auto">
+        <section>
+            <div className="relative py-4 mt-7 sm:max-w-xl sm:mx-auto">
             <div className="absolute inset-0 bg-gradient-to-r from-[#FFCA54] to-[#ffd677] shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
             <div className="relative px-2 py-4 bg-white shadow-lg sm:rounded-3xl sm:py-10 sm:px-20">
                 <div className="max-w-md mx-auto">
@@ -40,7 +41,9 @@ const Formulario = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </section>
+        
     )
 }
 

@@ -1,26 +1,40 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import Formulario from './Formulario'
+
 const Redes = () => {
-  return (
-    <div className="flex flex-col items-center text-center h-96 w-full">
-        <div className='flex flex-col items-center'>
-            <h1 className="fuenteTitulo text-4xl md:text-5xl text-center w-full">Contacto:</h1>
-                    <Image 
-                    src='/line.png'
-                    width={100}
-                    height={80}
-                    alt="line"
+    return (
+            <div className='flex items-center gap-10'>
+                <Link href={'https://github.com/AugustoFons'}>
+                    <Image
+                        src='/github.svg'
+                        width={50}
+                        height={50}
+                        alt="descargarcv"
+                        className='filterColor'
                     />
-        </div>
-                    
-                    <Image 
-                    src='/github.svg'
-                    width={80}
-                    height={80}
-                    alt="descargarcv"
+                </Link>
+                <Link href={'https://github.com/AugustoFons'}>
+                    <Image
+                        src='/lk.svg'
+                        width={70}
+                        height={69}
+                        alt="descargarcv"
+                        className='filterColor'
                     />
-    </div>
-  )
+                </Link>
+                <Link href={'https://github.com/AugustoFons'}>
+                    <Image
+                        src='/instagram.svg'
+                        width={69}
+                        height={69}
+                        alt="descargarcv"
+                        className='filterColor'
+                    />
+                </Link>
+            </div>
+    )
 }
 
 export default Redes

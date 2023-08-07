@@ -1,6 +1,7 @@
 import { ProjectSearch, ProjectInterface } from "@/common.types";
 import AboutMe from "@/components/AboutMe";
 import Cv from "@/components/Cv";
+import Formulario from "@/components/Formulario";
 import ProjectCard from "@/components/ProjectCard";
 import Redes from "@/components/Redes";
 import { fetchAllProjects } from "@/lib/actions";
@@ -57,9 +58,9 @@ const Home = async () => {
                     ))}
             </section>
 
-            <section className="flexCenter">
+            <section className="flex flex-col md:flex-row md:justify-center items-center md:items-start">
                 <Cv />
-                <Redes />
+                <Formulario />
             </section>
 
 

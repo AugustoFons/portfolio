@@ -1,8 +1,19 @@
 'use client'
 import Image from "next/image"
+import { useEffect, useState } from "react";
 import Typewriter from 'react-ts-typewriter';
 
 const AboutMe = () => {
+    const [cursorOptions, setCursorOptions] = useState<boolean>(true)
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setCursorOptions(false);
+        }, 4000);
+    
+        // Limpiar el temporizador cuando el componente se desmonta
+        return () => clearTimeout(timer);
+    }, []);
 
     return (
         <section className="flex-col items-center lg:flex lg:flex-row lg:items-center lg:justify-center">
@@ -28,12 +39,12 @@ const AboutMe = () => {
                             quality="100"
                             />  
                 </div>
-                <p className="justify-center indent-1 py-1 text lg:py-1 text-base lg:text-lg hyphens-auto fuenteTexto">
+                <p className="justify-center indent-1 py- text-base lg:text-lg hyphens-auto fuenteTexto">
                 ¡Hola! me llamo Augusto Fons, soy desarrollador web Full Stack, vivo en La ciudad de La Plata, Argentina. Apasionado por la programación y la creación de soluciones digitales. En este portfolio me gustaría compartirles varios de los proyectos en los que he estado trabajando, y con los que aprendo día a día. Actualmente me interesa ser parte de proyectos y oportunidades en las cuales pueda potenciar, desarrollar y aplicar mis conocimientos y habilidades. Para saber más sobre mí, pueden descargar mi CV o ver mis redes que dejaré en la sección de contacto.
                 </p>
                 
-                <p className="indent-1 py-1 lg:py-0 text-base lg:text-lg font-bold text-start fuenteTexto rounded-lg ">
-                    <Typewriter text='¡Gracias por visitar mi portfolio!' />
+                <p className="justify-center text-center py-1 lg:py-0 text-base lg:text-lg font-semibold fuenteTexto rounded-lg ">
+                    <Typewriter text='¡Gracias por visitar mi portfolio!' cursor={cursorOptions} />                
                 </p>
             </div>
 

@@ -71,7 +71,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
 
             <section className="flexCenter flex-col mt-4">
 
-                <Linkify as="p" className="max-w-5xl text-base lg:text-lg font-medium fuenteTexto linkA">
+                <Linkify as="p" className="max-w-5xl text-base lg:text-lg font-medium fuenteTexto linkify">
                     {projectId?.description}
                 </Linkify>
 

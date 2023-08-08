@@ -11,11 +11,11 @@ const Formulario: React.FC = () => {
 
 
     return (
-        <section className='min-h-fit flex flex-col justify-start mb-8 lg:mt-1 xs:translate-x-0 contactoResponsive'>
+        <section className='min-h-fit flex flex-col justify-start mb-16 lg:mb-0 lg:mt-1 contactoResponsive'>
             <div className="relative py-4 sm:mt-7 w-full lg:max-w-xl sm:mx-auto group">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#FFCA54] to-[#ffd677] group-hover:from-[#FFAF00] group-hover:to-[#FFCA54] shadow-lg transform -skew-y-6 sm:skew-y-0 -rotate-6 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#FFCA54] to-[#ffd677] group-hover:from-[#FFAF00] group-hover:to-[#FFCA54] shadow-xl transform skew-y-6 sm:skew-y-0 rotate-6 rounded-3xl"></div>
                 <section className="relative py-4 bg-white shadow-lg sm:rounded-3xl sm:py-10 px-6 xs:px-8 sm:px-20 lg:px-14">
-                    <div className="max-w-md mx-auto flex flex-col">
+                    <div className="flex flex-col">
                         <div className='flex flex-col items-center'>
                             <h1 className="fuenteTitulo text-4xl md:text-5xl text-center w-full">Contacto:</h1>
                             <Image

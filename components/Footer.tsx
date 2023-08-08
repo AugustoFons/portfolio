@@ -2,23 +2,28 @@ import Image from 'next/image'
 
 const Footer = () => {
     return (
-        <footer className='flexStart footer lg:px-20 py-4 px-5'>
-            <div className='flex flex-col gap-5 w-full'>
-                <div className='flex flex-col items-start'>
-                    <Image
-                        src='/lg.png'
-                        width={150}
-                        height={100}
-                        alt='Augusto Fons'
-                        />
-                </div>
-                <div className='footer_copyright'>
-                    <p>
-                        @ 2023 Portfolio. Sitio desarrollado por augustofonsdev@gmail.com
-                    </p>
-                </div>
+    <footer className='flex justify-center py-4 px-5 bg-amber-100'>
+        <div className='w-full max-w-screen-lg flex flex-col items-center gap-2'>
+            <Image
+                src='/lg.png'
+                width={140}
+                height={100}
+                alt='Augusto Fons'
+                className='back'
+            />
+            <div className='max-sm:w-full'>
+                <p className='text-center fuenteTexto font-medium'>
+                    © 2023 Portfolio. Sitio desarrollado por{" "}
+                    <a
+                        href='mailto:augustofonsdev@gmail.com'
+                        className='text-[#ff8000] hover:underline'
+                    >
+                        augustofonsdev@gmail.com
+                    </a>
+                </p>
             </div>
-        </footer>
+        </div>
+    </footer>
     )
 }
 

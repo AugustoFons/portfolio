@@ -57,10 +57,6 @@
   @apply flex-col w-full gap-20 bg-light-white;
 }
 
-.footer_copyright {
-  @apply max-sm:flex-col w-full text-sm font-normal;
-}
-
 /* Modal */
 .modal {
   @apply fixed z-10 left-0 right-0 -top-3 bottom-0 mx-auto backdrop-blur-3xl bg-[#FFB000]/20;
@@ -158,6 +154,10 @@
     margin-left: 6px;
   }
   .contactoResponsive {
+    width: 290px;
+    margin-left: 40px;
+  }
+  .cvResponsive {
     width: 240px;
     margin-left: 8px;
   }
@@ -233,8 +233,8 @@
   }
 }
 
-.linkA a {
-  color: rgb(255, 128, 0);
+.linkify a {
+  color: #ff8000;
   font-weight: 600;
 }
 

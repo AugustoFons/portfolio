@@ -43,7 +43,7 @@ const AboutMe = () => {
                 ¡Hola! me llamo Augusto Fons, soy desarrollador web Full Stack, vivo en La ciudad de La Plata, Argentina. Apasionado por la programación y la creación de soluciones digitales. En este portfolio me gustaría compartirles varios de los proyectos en los que he estado trabajando, y con los que aprendo día a día. Actualmente me interesa ser parte de proyectos y oportunidades en las cuales pueda potenciar, desarrollar y aplicar mis conocimientos y habilidades. Para saber más sobre mí, pueden descargar mi CV o ver mis redes que dejaré en la sección de contacto.
                 </p>
                 
-                <p className="justify-center text-center py-1 lg:py-0 text-base lg:text-lg font-semibold fuenteTexto rounded-lg ">
+                <p className="justify-center text-center py-1 text-base lg:text-lg font-semibold fuenteTexto rounded-lg ">
                     <Typewriter text='¡Gracias por visitar mi portfolio!' cursor={cursorOptions} />                
                 </p>
             </div>

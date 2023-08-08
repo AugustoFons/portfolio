@@ -59,7 +59,7 @@ const Home = async () => {
                     ))}
             </section>
 
-            <section className="flex flex-col md:flex-row flexCenter justify-center items-center gap-6 sm:gap-48 my-4">
+            <section className="flex flex-col lg:flex-row lg:justify-around lg:gap-20 items-center mt-20 md:mt-6 ">
                 <CvDescarga />
                 <Formulario />
             </section>

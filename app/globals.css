@@ -107,35 +107,59 @@
 /* CV */
 
 
-  .cv {
-    height: 590px;
-    min-height: 540px;
-    max-width: 520px;
-    background-image: url('/cuadernoFondo.png');
-    background-size: cover ;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.cv {
+  background-image: url('/fondoCVdiv.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 474px;
+  width: 351px;
+  max-width: 350px;
+}
+
 
 
 
 /* Media query para pantallas con un ancho menor a 320px */
 @media (max-width: 520px) {
   .responsiveMob {
-    transform: scale(0.55);
+    transform: scale(0.65);
     position: relative;
     bottom: 0px;
     filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
   }
+}
+
+@media (max-width: 400px) {
   .cv {
-    min-height: 300px;
-    max-height: 380px;
-    padding-top: 100px;
+    width: 290px;
+    padding: 5px;
+  }
+  .responsiveMob {
+    bottom: 14px;
   }
 }
+
+@media (max-width: 354px) {
+  .cv {
+    width: 276px;
+    padding: 5px;
+  }
+  .contactoResponsive {
+    width: 280px;
+  }
+}
+
 @media (max-width: 320px) {
   .responsiveMob {
     filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
+  }
+  .cv {
+    margin-left: 6px;
+  }
+  .contactoResponsive {
+    width: 240px;
+    margin-left: 8px;
   }
 }
 /* hover links */

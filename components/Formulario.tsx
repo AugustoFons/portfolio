@@ -11,10 +11,10 @@ const Formulario: React.FC = () => {
 
 
     return (
-        <section className='min-h-screen py-2 flex flex-col justify-center sm:py-12'>
-            <div className="relative py-4 sm:mt-7 w-full sm:max-w-xl sm:mx-auto group">
+        <section className='min-h-fit flex flex-col justify-start mb-8 lg:mt-1 xs:translate-x-0 contactoResponsive'>
+            <div className="relative py-4 sm:mt-7 w-full lg:max-w-xl sm:mx-auto group">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#FFCA54] to-[#ffd677] group-hover:from-[#FFAF00] group-hover:to-[#FFCA54] shadow-lg transform -skew-y-6 sm:skew-y-0 -rotate-6 rounded-3xl"></div>
-                <section className="relative px-2 py-4 bg-white shadow-lg sm:rounded-3xl sm:py-10 sm:px-20">
+                <section className="relative py-4 bg-white shadow-lg sm:rounded-3xl sm:py-10 px-6 xs:px-8 sm:px-20 lg:px-14">
                     <div className="max-w-md mx-auto flex flex-col">
                         <div className='flex flex-col items-center'>
                             <h1 className="fuenteTitulo text-4xl md:text-5xl text-center w-full">Contacto:</h1>
@@ -32,7 +32,7 @@ const Formulario: React.FC = () => {
                                 <TextareaAutosize
                                         id="nombre"
                                         name="nombre"
-                                        className={`peer placeholder-transparent h-12 w-full border-b-2 fuenteTexto text-base focus:outline-none focus:border-[#FFCA54]  resize-none ${nombreValue ? 'peer-placeholder-shown:top-2' : 'peer-placeholder-shown:top-8'}`}
+                                        className={`peer placeholder-transparent h-12 w-3/4 xs:w-full border-b-2 fuenteTexto text-base focus:outline-none focus:border-[#FFCA54]  resize-none ${nombreValue ? 'peer-placeholder-shown:top-2' : 'peer-placeholder-shown:top-8'}`}
                                         placeholder=" "
                                         value={nombreValue}
                                         onChange={(e) => setNombreValue(e.target.value)}
@@ -49,7 +49,7 @@ const Formulario: React.FC = () => {
                                 <TextareaAutosize
                                         id="asunto"
                                         name="asunto"
-                                        className={`peer placeholder-transparent h-12 w-full border-b-2 fuenteTexto text-base focus:outline-none focus:border-[#FFCA54]  resize-none ${asuntoValue ? 'peer-placeholder-shown:top-2' : 'peer-placeholder-shown:top-8'}`}
+                                        className={`peer placeholder-transparent h-12 w-3/4 xs:w-full border-b-2 fuenteTexto text-base focus:outline-none focus:border-[#FFCA54]  resize-none ${asuntoValue ? 'peer-placeholder-shown:top-2' : 'peer-placeholder-shown:top-8'}`}
                                         placeholder=" "
                                         value={asuntoValue}
                                         onChange={(e) => setAsuntoValue(e.target.value)}

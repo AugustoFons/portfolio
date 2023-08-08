@@ -1,6 +1,7 @@
 import { ProjectSearch, ProjectInterface } from "@/common.types";
 import AboutMe from "@/components/AboutMe";
 import Cv from "@/components/Cv";
+import CvDescarga from "@/components/CvDescarga";
 import Formulario from "@/components/Formulario";
 import ProjectCard from "@/components/ProjectCard";
 import Redes from "@/components/Redes";
@@ -59,7 +60,7 @@ const Home = async () => {
             </section>
 
             <section className="flex flex-col md:flex-row flexCenter justify-center items-center gap-6 sm:gap-48 my-4">
-                <Cv />
+                <CvDescarga />
                 <Formulario />
             </section>
 

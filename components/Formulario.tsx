@@ -9,6 +9,7 @@ const Formulario: React.FC = () => {
     const [asuntoValue, setAsuntoValue] = useState('');
     const [mensajeValue, setMensajeValue] = useState('');
 
+
     return (
         <section className='min-h-screen py-2 flex flex-col justify-center sm:py-12'>
             <div className="relative py-4 sm:mt-7 w-full sm:max-w-xl sm:mx-auto group">
@@ -25,13 +26,13 @@ const Formulario: React.FC = () => {
                                 className='-ml-3 -translate-y-1 group-hover:filterColorCv'
                             />
                         </div>
-                        <div className="divide-y divide-gray-800">
+                        <div>
                             <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
                                 <div className="relative py-2">
                                 <TextareaAutosize
                                         id="nombre"
                                         name="nombre"
-                                        className={`peer placeholder-transparent h-12 w-full border-b-2 fuenteTexto text-base focus:outline-none focus:border-[#FFCA54] ${nombreValue ? 'peer-placeholder-shown:top-2' : 'peer-placeholder-shown:top-8'}`}
+                                        className={`peer placeholder-transparent h-12 w-full border-b-2 fuenteTexto text-base focus:outline-none focus:border-[#FFCA54]  resize-none ${nombreValue ? 'peer-placeholder-shown:top-2' : 'peer-placeholder-shown:top-8'}`}
                                         placeholder=" "
                                         value={nombreValue}
                                         onChange={(e) => setNombreValue(e.target.value)}
@@ -48,7 +49,7 @@ const Formulario: React.FC = () => {
                                 <TextareaAutosize
                                         id="asunto"
                                         name="asunto"
-                                        className={`peer placeholder-transparent h-12 w-full border-b-2 fuenteTexto text-base focus:outline-none focus:border-[#FFCA54] ${asuntoValue ? 'peer-placeholder-shown:top-2' : 'peer-placeholder-shown:top-8'}`}
+                                        className={`peer placeholder-transparent h-12 w-full border-b-2 fuenteTexto text-base focus:outline-none focus:border-[#FFCA54]  resize-none ${asuntoValue ? 'peer-placeholder-shown:top-2' : 'peer-placeholder-shown:top-8'}`}
                                         placeholder=" "
                                         value={asuntoValue}
                                         onChange={(e) => setAsuntoValue(e.target.value)}
@@ -61,7 +62,7 @@ const Formulario: React.FC = () => {
                                         Asunto
                                     </label>
                                 </div>
-                                <div className="relative py-2">
+                                <div className="relative py-2 my-2">
                                     <TextareaAutosize
                                         id="mensaje"
                                         name="mensaje"
@@ -69,6 +70,7 @@ const Formulario: React.FC = () => {
                                         placeholder=" "
                                         value={mensajeValue}
                                         onChange={(e) => setMensajeValue(e.target.value)}
+                                        minRows={2}
                                     />
                                     <label
                                         htmlFor="mensaje"

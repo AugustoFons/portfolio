@@ -117,6 +117,8 @@
     background-position: center;
   }
 
+
+
 /* Media query para pantallas con un ancho menor a 320px */
 @media (max-width: 520px) {
   .responsiveMob {

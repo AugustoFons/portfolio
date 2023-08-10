@@ -71,8 +71,10 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
 
             <section className="flexCenter flex-col mt-4">
 
-                <Linkify as="p" className="max-w-5xl text-base lg:text-lg font-medium fuenteTexto linkify">
-                    {projectId?.description}
+                <Linkify as="p" className="max-w-5xl text-base lg:text-lg font-medium fuenteTexto linkify hyphens-auto">
+                    {projectId?.description && projectId?.description.length > 30
+                        ? projectId?.description.substring(0, 30) + "..."
+                        : projectId?.description}
                 </Linkify>
 
                 <div className="flex flex-col sm:flex-row mt-5 gap-2 xs:gap-5 group-hover:scale-150 group-hover:-translate-y-96 z-10">

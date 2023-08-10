@@ -15,21 +15,21 @@ const Redes = () => {
                         className='filterColor'
                     />
                 </Link>
-                <Link href={'https://github.com/AugustoFons'}>
+                <Link href={'https://www.linkedin.com/in/augustofons/'}>
                     <Image
                         src='/lk.svg'
                         width={70}
                         height={69}
-                        alt="descargarcv"
+                        alt="linkedin"
                         className='filterColor'
                     />
                 </Link>
-                <Link href={'https://github.com/AugustoFons'}>
+                <Link href={'https://www.instagram.com/augg.edeelp/'}>
                     <Image
                         src='/instagram.svg'
                         width={69}
                         height={69}
-                        alt="descargarcv"
+                        alt="instagram"
                         className='filterColor'
                     />
                 </Link>

@@ -117,22 +117,30 @@
 
 
 /* Media query para pantallas con un ancho menor a 320px */
+@media (max-width: 640px) {
+  .cv {
+    width: 330px;
+    padding: 5px;
+  }
+}
+
 @media (max-width: 520px) {
   .responsiveMob {
     transform: scale(0.65);
     position: relative;
-    bottom: 0px;
+    bottom: -5px;
     filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
   }
 }
 
 @media (max-width: 400px) {
-  .cv {
-    width: 290px;
-    padding: 5px;
-  }
+
   .responsiveMob {
-    bottom: 14px;
+    transform: scale(0.75);
+    bottom: 20px;
+  }
+  .contactoResponsive {
+    width: 291px;
   }
 }
 
@@ -140,9 +148,6 @@
   .cv {
     width: 276px;
     padding: 5px;
-  }
-  .contactoResponsive {
-    width: 280px;
   }
 }
 

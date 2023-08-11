@@ -1,10 +1,8 @@
 import { ProjectSearch, ProjectInterface } from "@/common.types";
 import AboutMe from "@/components/AboutMe";
-import Cv from "@/components/Cv";
 import CvDescarga from "@/components/CvDescarga";
 import Formulario from "@/components/Formulario";
 import ProjectCard from "@/components/ProjectCard";
-import Redes from "@/components/Redes";
 import { fetchAllProjects } from "@/lib/actions";
 import Image from "next/image";
 
@@ -59,7 +57,7 @@ const Home = async () => {
                     ))}
             </section>
 
-            <section className="flex flex-col lg:flex-row lg:justify-around lg:gap-20 items-center mt-20 md:mt-6 ">
+            <section className="flex flex-col lg:flex-row lg:justify-around lg:gap-20 items-center mt-20 md:mt-4 ">
                 <CvDescarga />
                 <Formulario />
             </section>

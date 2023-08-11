@@ -1,13 +1,12 @@
 'use client'
 import Image from 'next/image'
-import { useState, Fragment } from 'react'
+import React, { useState } from 'react'
 import { Menu, Transition } from "@headlessui/react";
 import Link from 'next/link';
 import { NavLinks } from '@/constant'
 
 const MenuMobile = () => {
     const [open, setOpen] = useState(false)
-
 
     return (
         <div className='md:hidden flexCenter z-10 flex-col relative'>
@@ -22,13 +21,8 @@ const MenuMobile = () => {
                         />
                 </Menu.Button>
 
-                <Transition
-                    as={Fragment}
-                    >
-                    <Menu.Items
-                        static
-                        className="flexStart menu-items group"
-                        >
+                <Transition as={React.Fragment}>
+                    <Menu.Items static className="flexStart menu-items group">
                         <div className="flex flex-col gap-6 pt-4 items-center w-full fuenteTexto">
                             {NavLinks.map((link) => (
                                 <div key={link.key} className='w-max'>

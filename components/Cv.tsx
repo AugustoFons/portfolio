@@ -15,7 +15,7 @@ const Cv = () => {
                     width={126}
                     height={181}
                     alt="descargarcv"
-                    className='ml-4 xs:-translate-y-1 scale-100 group-hover:scale-75 xs:group-hover:scale-100 responsiveMob sm:group-hover:filterColorCv'
+                    className='ml-4 xs:-translate-y-1 xs:group-hover:-translate-y-2 sm:group-hover:filterColorCv responsiveDescarga'
                 />
             </div>
         </section>

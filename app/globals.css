@@ -5,12 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* utilidades */
 .flexCenter {
   @apply flex justify-center items-center;
 }
@@ -23,6 +25,7 @@
   @apply flex items-center justify-start;
 }
 
+/* fuentes */
 .fuenteTitulo {
   font-family: 'Caveat Brush'
 }
@@ -31,12 +34,14 @@
   letter-spacing: 2px;
 }
 
+/* filtro hover para links, iconos.. */
 .filterColor:hover {
   filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
   cursor: pointer;
   /* #FFB000 */
 }
 
+/* scroll... */
 ::-webkit-scrollbar {
   width: 7px;
   height: 4px;
@@ -100,21 +105,16 @@
   }
 }
 
-/* CV */
-
-
+/* CV y Formulario - Querys de estas tarjetas */
 .cv {
   background-image: url('/fondoCVdiv.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 474px;
+  height: 457px;
   width: 351px;
   max-width: 350px;
 }
-
-
-
 
 /* Media query para pantallas con un ancho menor a 320px */
 @media (max-width: 640px) {
@@ -125,7 +125,7 @@
 }
 
 @media (max-width: 520px) {
-  .responsiveMob {
+  .responsiveDescarga {
     transform: scale(0.65);
     position: relative;
     bottom: -5px;
@@ -135,7 +135,7 @@
 
 @media (max-width: 400px) {
 
-  .responsiveMob {
+  .responsiveDescarga {
     transform: scale(0.75);
     bottom: 20px;
   }
@@ -152,7 +152,7 @@
 }
 
 @media (max-width: 320px) {
-  .responsiveMob {
+  .responsiveDescarga {
     filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
   }
   .cv {
@@ -160,15 +160,15 @@
   }
   .contactoResponsive {
     width: 290px;
-    margin-left: 40px;
+    margin-left: 50px;
   }
   .cvResponsive {
     width: 240px;
     margin-left: 8px;
   }
 }
-/* hover links */
 
+/* hover links efecto circulo amarillo */
 .linkBorder {
   transition: color 0.25s 0.0833333333s;
   position: relative;
@@ -238,6 +238,7 @@
   }
 }
 
+/* color link description */
 .linkify a {
   color: #ff8000;
   font-weight: 600;

@@ -90,7 +90,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
                     </Link>
                     <Image src="/dot.svg" width={6} height={6} alt="dot" className='hidden sm:flex md:mx-12' />
                     <Link href={`${projectId?.siteUrl}`} className="">
-                        <div className="flexCenter gap-1 filterColor">
+                        <div className="flex items-center gap-1 filterColor">
                             <Image
                                 src="/deployment.png"
                                 width={36}

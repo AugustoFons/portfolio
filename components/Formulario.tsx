@@ -10,14 +10,27 @@ const Formulario: React.FC = () => {
     const [emailValue, setEmailValue] = useState('');
     const [mensajeValue, setMensajeValue] = useState('');
 
+    const [envioExitoso, setEnvioExitoso] = useState(false);
+    const [enviando, setEnviando] = useState(false);
+
     const form: any = useRef();
 
     const sendEmail = (e: any) => {
         e.preventDefault();
-
+        setEnviando(true);
+        
         emailjs.sendForm('service_wmh8cxj', 'template_vw5agvk', form.current, 'VVlLmi1iNNIDDwVdN')
             .then((result) => {
                 console.log(result.text);
+                setEnvioExitoso(true);
+
+                setTimeout(() => {
+                    setEnviando(false); // Ocultar el estado de envío después de unos segundos
+                    setEnvioExitoso(false);
+                    setNombreValue('')
+                    setEmailValue('')
+                    setMensajeValue('')
+                }, 1000);
             }, (error) => {
                 console.log(error.text);
             });
@@ -91,7 +104,34 @@ const Formulario: React.FC = () => {
                                 </label>
                             </div>
                             <div className="flex flex-col items-center">
-                                <button type="submit" value="Send" className="bg-[#FFCA54] group-hover:bg-[#FFAF00] text-white rounded-md px-2 py-1">Enviar</button>
+
+                                {envioExitoso ? 
+                                    <button 
+                                        disabled
+                                        type="submit" 
+                                        value="Send" 
+                                        className="flex  items-center gap-1 bg-[#FFCA54] group-hover:bg-[#FFAF00] text-white rounded-md px-2 py-1"
+                                    >
+                                        Enviar
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </button>
+                                    :
+                                    <button
+                                        type="submit"
+                                        value="Send"
+                                        className="flex items-center gap-1 bg-[#FFCA54] group-hover:bg-[#FFAF00] text-white rounded-md px-2 py-1"
+                                        disabled={enviando}
+                                    >
+                                        Enviar
+                                        {enviando && (
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        )}
+                                    </button>
+                                }
                             </div>
                         </form>
                         <Redes />

@@ -3,15 +3,15 @@ import AboutMe from "@/components/AboutMe";
 import CvDescarga from "@/components/CvDescarga";
 import Formulario from "@/components/Formulario";
 import ProjectCard from "@/components/ProjectCard";
-import { fetchAllProjects } from "@/lib/actions";
 import Image from "next/image";
+import { data } from "./_data";
 
 export const dynamic = 'force-dynamic';
 export const dynamicParams = true;
 export const revalidate = 0;
 
 const Home = async () => {
-    const data = await fetchAllProjects() as ProjectSearch
+/*     const data = await fetchAllProjects() as ProjectSearch
 
     const projectsView = data?.projectSearch?.edges;
 
@@ -21,7 +21,7 @@ const Home = async () => {
                 <p>No projects found</p>
             </section>
         )
-    }
+    } */
 
     return (
         <section className="flex-start flex-col lg:px-20 py-4 px-5 mb-16">
@@ -40,19 +40,19 @@ const Home = async () => {
             </div>
 
             <section className="projects-grid">
-                {projectsView
-                    .sort((a, b) => b.node.order - a.node.order) // Ordena los proyectos en orden descendente según el número de order
-                    .map(({ node }: { node: ProjectInterface }) => (
+                {data
+                    .sort((a, b) => b.order - a.order) // Ordena los proyectos en orden descendente según el número de order
+                    .map((item: ProjectInterface, index) => (
                         <ProjectCard 
-                            key={node?.id}
-                            id={node?.id}
-                            title={node?.title}
-                            description={node?.description}
-                            image={node?.image}
-                            siteUrl={node?.siteUrl}
-                            gitHub={node?.gitHub}
-                            category={node?.category}
-                            order={node?.order}
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            description={item.description}
+                            image={item.image}
+                            siteUrl={item.siteUrl}
+                            gitHub={item.gitHub}
+                            category={item.category}
+                            order={item.order}
                         />
                     ))}
             </section>

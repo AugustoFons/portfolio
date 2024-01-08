@@ -1,23 +1,25 @@
 import { ProjectInterface } from '@/common.types'
 import DescriptionProject from '@/components/DescriptionProject';
 import Modal from '@/components/Modal';
-import { getProjectId } from '@/lib/actions'
 import Image from 'next/image'
 import Link from 'next/link'
+import { data } from "../../_data"
 
 
 
 const Project = async ({ params: { id } }: { params: { id: string } }) => {
 
     /* get por ID */
-    const data = await getProjectId(id) as {
+/*     const data = await getProjectId(id) as {
         project?: ProjectInterface
     };
     const projectId = data?.project
 
     if (!data?.project) {
         <p>Failed to fetch</p>
-    }
+    } */
+    const projectId = data.find(item => item.id === id);
+
 
     return (
         <Modal>

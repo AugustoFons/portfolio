@@ -36,7 +36,7 @@ export const data = [
         description: "Esta página la realize para una tarea en la que debia tratar de hacer algún componente de una plataforma conocida lo más parecido posible. Para esto eleji las tarjetas de Spotify. Tambien me sirvio para aprender a aplicar estados y contextos de React. La Reproducción de música es funcional en dispositivos de escritorio.",
         siteUrl: "https://tareaspot.vercel.app/",
         gitHub: "https://github.com/AugustoFons/tarea-Spotify-ReactComponentes",
-        category: "Componentes",
+        category: "React Componentes",
         order: 6
     },
     {
@@ -46,7 +46,7 @@ export const data = [
         description: "Prueba de formulario en React usando Formik, EmailJS y Bootstrap",
         siteUrl: "https://formulario-en-react.vercel.app/",
         gitHub: "https://github.com/AugustoFons/Formulario-en-React",
-        category: "Formulario",
+        category: "EmailJS",
         order: 7
     },
     {
@@ -56,7 +56,7 @@ export const data = [
         description: "Este sitio web lo realize con NextJS 13, el framework de React. Para los estilos use por primera vez Tailwind y en el backend use la nueva funcionalidad de Next para integrar una base de datos de MongoDB. Tambien use la api de Google Provider para registros e inicios de sesión. Debo mencionar al canal de Youtube JavaScript Mastery del cual aprendi las nuevas funcionalidades de NextJS y como conectar los proveedores de Google.",
         siteUrl: "https://programandoblog.vercel.app/feed",
         gitHub: "https://github.com/AugustoFons/programandoBlog-next13",
-        category: "FullStack",
+        category: "NextJS | MongoDB",
         order: 8
     },
     {
@@ -66,7 +66,7 @@ export const data = [
         description: "Para este proyecto desarrolle un modelo que recibe la informacion de libros de programacion de la api de OpenLibra y los guarda en mi base de datos de MongoDB. Conjuntamente desarrolle un Frontend que muestra cada uno de los libros y tambien mediante formularios estos se pueden editar o agregar nuevos libros. Ver más info en el README de gitHub.",
         siteUrl: "https://backend-proyectofinal-production.up.railway.app/get",
         gitHub: "https://github.com/AugustoFons/backendLibros-proyectoFinal",
-        category: "Backend",
+        category: "Node | MongoDB",
         order: 9
     },
     {
@@ -76,7 +76,7 @@ export const data = [
         description: "Este frontend hecho en react esta conectado con el backend en MongoDB que arme en el repositorio https://github.com/AugustoFons/backend-proyectoFinal y permite agregar y editar los libros de la base de datos mediante formularios. Como asi tambien descargar libros, comentarlos, puntuarlos, etc. Del CRUD hecho en el backend , el frontend permite Leer, Crear y Editar libros. La edicion por el momento la deshabilite para evitar que me cambien la informacion de la base de datos hasta que le agregue permisos a la pagina. Para los componentes de la aplicacion elegi usar la libreria Material UI.",
         siteUrl: "https://frontend-proyecto-final-chi.vercel.app/",
         gitHub: "https://github.com/AugustoFons/frontendLibros-proyectoFinal",
-        category: "Frontend",
+        category: "React | MUI",
         order: 10
     },
     {
@@ -86,7 +86,7 @@ export const data = [
         description: "Proyecto E-Commerce en React, realizado en grupo para el trabajo final del modulo Front-end en Academia Numen. Funcionalidad completa de carrito de compras. *Actualmente hay un problema con el servidor de la base de datos que puede tardar hasta un minuto en cargar o necesitar una recarga, prontamente voy a cambiar el servidor*",
         siteUrl: "https://storepineapple-ecommerce.vercel.app/",
         gitHub: "https://github.com/AugustoFons/Proyecto-Final-React",
-        category: "e-Commerce",
+        category: "e-Commerce con React",
         order: 11
     },
     {
@@ -96,7 +96,7 @@ export const data = [
         description: "Este es el proyecto de esta misma página, mi portfolio, esta realizado con NextJS 13, Tailwind y TypeScript. En principio habia conectado el proyecto a una base de datos de GraphQL usando Grafbase, pero Grafbase hizo modificaciones que requieren implementar conectores de PostgresQL o de MongoDb para funcionar. Esto aún no lo he implementado por lo que de momento los datos de los proyectos que voy realizando los cargo usando las acciones de servidor de NextJS.",
         siteUrl: "https://portfolio-augustofons.vercel.app/",
         gitHub: "https://github.com/AugustoFons/portfolio",
-        category: "Portfolio",
+        category: "NextJS | TypeScript | Tailwind",
         order: 12
     },
     {
@@ -118,5 +118,15 @@ export const data = [
         gitHub: "https://github.com/AugustoFons/ProyectoPythonCoderhouse-FonsAugusto",
         category: "Django | PostgresQL",
         order: 14
+    },
+    {
+        id: "15",
+        title: "Página Personalizada",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1708922673/bernard_uohh4x.jpg",
+        description: "Esta Web se la estoy haciendo a un familiar el cual es músico. Actualmente esta en construcción la página ya que me faltan completar secciones y conectar la página a un backend mediante al cual pueda actualizar contenido con formularios. Para consumir los videos de Youtube utilizé la herramienta RapidApi, para los estilos he usado tambien MUI y herramientas como swiper **El REPOSITORIO lo tengo privado por el momento y el DEPLOY es solo una prueba**",
+        siteUrl: "https://bernar-app.vercel.app/",
+        gitHub: "https://github.com/AugustoFons",
+        category: "En construcción | NextJS",
+        order: 15
     }
 ];

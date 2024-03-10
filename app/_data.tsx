@@ -126,7 +126,7 @@ export const data = [
         description: "Esta Web se la estoy haciendo a un familiar el cual es músico. Actualmente esta en construcción la página ya que me faltan completar secciones y conectar la página a un backend mediante al cual pueda actualizar contenido con formularios. Para consumir los videos de Youtube utilizé la herramienta RapidApi, para los estilos he usado tambien MUI y herramientas como swiper **El REPOSITORIO lo tengo privado por el momento y el DEPLOY es solo una prueba**",
         siteUrl: "https://bernar-app.vercel.app/",
         gitHub: "https://github.com/AugustoFons",
-        category: "En construcción | NextJS",
+        category: "En construcción | React",
         order: 15
     }
 ];

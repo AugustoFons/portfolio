@@ -64,7 +64,7 @@ export const data = [
         title: "Libros P Backend",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114398/backendLibros_eunuo1.jpg",
         description: "Para este proyecto desarrolle un modelo que recibe la informacion de libros de programacion de la api de OpenLibra y los guarda en mi base de datos de MongoDB. Conjuntamente desarrolle un Frontend que muestra cada uno de los libros y tambien mediante formularios estos se pueden editar o agregar nuevos libros. Ver más info en el README de gitHub.",
-        siteUrl: "https://backend-proyectofinal-production.up.railway.app/get",
+        siteUrl: "https://ochre-fawn-wrap.cyclic.app/get",
         gitHub: "https://github.com/AugustoFons/backendLibros-proyectoFinal",
         category: "Node | MongoDB",
         order: 9

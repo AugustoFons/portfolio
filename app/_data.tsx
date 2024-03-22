@@ -123,9 +123,9 @@ export const data = [
         id: "15",
         title: "Página Personalizada",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1708922673/bernard_uohh4x.jpg",
-        description: "Esta Web se la estoy haciendo a un familiar el cual es músico. Actualmente esta en construcción la página ya que me faltan completar secciones y conectar la página a un backend mediante al cual pueda actualizar contenido con formularios. Para consumir los videos de Youtube utilizé la herramienta RapidApi, para los estilos he usado tambien MUI y herramientas como swiper **El REPOSITORIO lo tengo privado por el momento y el DEPLOY es solo una prueba**",
+        description: "Esta Web la estoy programando actualmente para un familiar el cual es músico. Actualmente esta en construcción la página ya que me faltan completar secciones y conectar la página a un backend mediante al cual pueda actualizar contenido del blog con formularios. Para consumir los videos de Youtube utilizé la herramienta RapidApi, para los estilos he usado tambien MUI y herramientas como swiper",
         siteUrl: "https://bernar-app.vercel.app/",
-        gitHub: "https://github.com/AugustoFons",
+        gitHub: "https://github.com/AugustoFons/appMusica-Personalizada",
         category: "En construcción | React",
         order: 15
     }

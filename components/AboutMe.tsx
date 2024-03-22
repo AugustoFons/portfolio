@@ -24,7 +24,7 @@ const AboutMe = () => {
 
 
     return (
-        <section className="lg:flex lg:items-center lg:justify-center">
+        <section className="lg:flex lg:items-center lg:justify-center gap-8">
             <div className="w-full lg:w-3/4 flex flex-col items-center">
                 <h1 id="sobreMi" className="fuenteTitulo text-5xl text-center mt-4">Sobre Mi:</h1>
                 <Image 
@@ -46,12 +46,14 @@ const AboutMe = () => {
                         quality="100"
                         />  
                 </div>
-                <p className="justify-center indent-1 py-2 text-base lg:text-lg hyphens-auto fuenteTexto">
-                ¡Hola! me llamo Augusto Fons, soy desarrollador web Full Stack, y vivo en La ciudad de La Plata, Argentina. Apasionado por la programación y la creación de soluciones digitales. En este portfolio me gustaría compartirles varios de los proyectos en los que he estado trabajando, y con los que aprendo día a día. Actualmente me interesa ser parte de proyectos y oportunidades en las cuales pueda potenciar, desarrollar y aplicar mis conocimientos y habilidades. Para saber más sobre mí, pueden descargar mi CV o ver mis redes que dejaré en la sección de contacto.
-                </p>
-                
+                    <p className="text-justify mx-auto max-w-4xl py-2 text-base lg:text-lg hyphens-auto fuenteTexto">
+                        <span className="py-1 text-base lg:text-2xl font-base rounded-lg letterSpecial m-0">
+                            {`¡Bienvenido! `} 
+                        </span>
+                        Me llamo Augusto Fons. Vivo en La ciudad de La Plata, Argentina, y soy desarrollador web Full Stack. En este portfolio intento reflejar mi dedicación a la programación, y a la creación de soluciones digitales, compartiendo varios de los proyectos en los que he estado trabajando, y a través de los cuales aprendo día a día. Actualmente me interesa ser parte de proyectos y oportunidades en los cuales pueda potenciar, desarrollar y aplicar mis conocimientos y habilidades. Para saber más sobre mí, pueden descargar mi CV o ver mis redes sociales que dejaré en la sección de contacto.
+                    </p>
                 <InView onChange={handleIntersection}>
-                    <p className="justify-center text-center py-1 text-base lg:text-lg font-semibold fuenteTexto rounded-lg">
+                    <p className="justify-center text-center py-1 text-base lg:text-2xl font-base rounded-lg letterSpecial">
                         {showTypewriter && <Typewriter text='¡Gracias por visitar mi portfolio!' cursor={cursorOptions} />}
                     </p>
                 </InView>

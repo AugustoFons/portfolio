@@ -83,10 +83,10 @@ export const data = [
         id: "11",
         title: "Proyecto Final React",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114398/proyecto-pinapple_lfj9bw.jpg",
-        description: "Proyecto E-Commerce en React, realizado en grupo para el trabajo final del modulo Front-end en Academia Numen. Funcionalidad completa de carrito de compras. *Actualmente hay un problema con el servidor de la base de datos que puede tardar hasta un minuto en cargar o necesitar una recarga, prontamente voy a cambiar el servidor*",
+        description: "Proyecto E-Commerce en React, realizado en grupo para el trabajo final del modulo Front-end en Academia Numen. Funcionalidad completa de carrito de compras. Inicialmente tenia un servidor json desarrollado en node pero los servidores gratuitos para json server en node tenian limitaciones en tiempos de cargas, cree un servidor json en Django, pueden ver el proyecto del servidor en este mismo portfolio https://portfolio-augustofons.vercel.app/project/16",
         siteUrl: "https://storepineapple-ecommerce.vercel.app/",
         gitHub: "https://github.com/AugustoFons/Proyecto-Final-React",
-        category: "e-Commerce con React",
+        category: "e-Commerce React | Django",
         order: 11
     },
     {
@@ -127,6 +127,16 @@ export const data = [
         siteUrl: "https://bernar-app.vercel.app/",
         gitHub: "https://github.com/AugustoFons/appMusica-Personalizada",
         category: "En construcción | React",
+        order: 15
+    },
+    {
+        id: "16",
+        title: "Django Json Server",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1711296986/Captura_de_pantalla_2024-03-24_131510_ldrjol.jpg",
+        description: "Esta Web desarrollada en Python con Django actua como un servidor Json. Lo cree con el fin de simular una base de datos para un proyecto de un e-commerce en React que tuve que realizar en 2022. para un trabajo de estudio. En su momento habiamos hecho con mis compañeros un json-server en Node pero dado que los tiempos de carga del servidor eran elevados y no tenia muchas opciones para hacer un deploy gratuito, intente hacer el servidor con Django manteniendo el fin de que el servidor sea un json, lo cual fue mucho más complejo pero pude hacer el deploy facilmente en vercel mejorando los tiempos de carga del servidor. La web que consume el servidor es la siguiente https://storepineapple-ecommerce.vercel.app/ y tiene como repositorio https://github.com/AugustoFons/Proyecto-Final-React . Los ENDPOINTS, todos permiten solicitudes GET, el del carrito tambien permite solicitudes POST, PUT y DELETE, y el de favoritos tambien permite POST y DELETE. Si se descarga el proyecto instalar las dependencias del archivo requirements.txt, este tiene versiones algo más antiguas ya que son las que admite vercel para el deploy pero se pueden instalar dependencias más recientes para trabajar localmente.",
+        siteUrl: "https://django-json-server.vercel.app/",
+        gitHub: "https://github.com/AugustoFons/django-json-server",
+        category: "Python | Django",
         order: 15
     }
 ];

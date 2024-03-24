@@ -137,6 +137,6 @@ export const data = [
         siteUrl: "https://django-json-server.vercel.app/",
         gitHub: "https://github.com/AugustoFons/django-json-server",
         category: "Python | Django",
-        order: 15
+        order: 16
     }
 ];

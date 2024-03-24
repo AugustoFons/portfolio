@@ -1,42 +1,52 @@
 export const data = [
     {
-        id: "3",
+        id: "2",
         title: "EncriptaTor",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114398/encriptador-challenge_yvimvp.jpg",
         description: "Encriptador de texto que realize para un Challenge del curso de Principiante en Programación de Oracle Next Education. Sitio no responsive.",
         siteUrl: "https://augustofons.github.io/encriptador-alura-challenge/",
         gitHub: "https://github.com/AugustoFons/encriptador-alura-challenge",
         category: "JS",
-        order: 3
+        order: 2
     },
     {
-        id: "4",
+        id: "3",
         title: "Red Social",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114399/redSocial_v7kflq.jpg",
         description: "Esta es la idea/diseño de una red social para Artistas. Este proyecto lo hice en mis primeras clases de HTML y CSS en Academia Numen, en el cual aplique las cosas que aprendi por primera vez de HTML y CSS. En algún momento me gustaria corregir y mejorar el codigo como asi agregar nuevas cosas ya que es uno de mis primeros proyectos.",
         siteUrl: "https://augustofons.github.io/RedSocial/",
         gitHub: "https://github.com/AugustoFons/RedSocial",
         category: "HTML | CSS",
-        order: 4
+        order: 3
     },
     {
-        id: "5",
+        id: "4",
         title: "TragosOna",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114399/tragosOna_jbtdll.jpg",
         description: "Trabajo grupal realizado en el curso de desarrollo web full stack del programa codo a codo. El objetivo era construir una página web usando HTML, CSS, JS y consumir una api con VUE.",
         siteUrl: "https://augustofons.github.io/PaginaWebTragos/",
         gitHub: "https://github.com/AugustoFons/PaginaWebTragos",
         category: "Vue.js | API",
-        order: 5
+        order: 4
     },
     {
-        id: "6",
+        id: "5",
         title: "Spotify Cards",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114399/spotify-components_moaqmm.jpg",
         description: "Esta página la realize para una tarea en la que debia tratar de hacer algún componente de una plataforma conocida lo más parecido posible. Para esto eleji las tarjetas de Spotify. Tambien me sirvio para aprender a aplicar estados y contextos de React. La Reproducción de música es funcional en dispositivos de escritorio.",
         siteUrl: "https://tareaspot.vercel.app/",
         gitHub: "https://github.com/AugustoFons/tarea-Spotify-ReactComponentes",
         category: "React Componentes",
+        order: 5
+    },
+    {
+        id: "6",
+        title: "Página personalizada",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1711298757/psic_cpvwel.jpg",
+        description: "Esta es una de las primeras páginas que realize, un un inicio la hice con HTML, CSS y JavaScript, cuando estaba aprendiendo estas teconologias, y luego la migre a NextJS para mejorar el SEO ya que el fin de la página es para hacerle publicidad a un familiar, en Google con google ADS.",
+        siteUrl: "https://psibernardoschiavi.vercel.app/",
+        gitHub: "https://github.com/AugustoFons/pagina-psicologo",
+        category: "HTML CSS JS NextJS",
         order: 6
     },
     {

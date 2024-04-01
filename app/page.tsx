@@ -26,7 +26,7 @@ const Home = async () => {
     return (
         <section className="flex-start flex-col lg:px-20 py-4 px-5 mb-16">
             <AboutMe />
-            <div className="w-full flex items-center md:my-6 my-4 p-2 justify-start">
+            <div className="w-full flex items-center md:mb-6 md:mt-4 my-4 p-2 justify-start">
                 <div>
                     <h1 id="proyectos" className="fuenteTitulo text-5xl text-center">Proyectos:</h1>                
                     <Image 

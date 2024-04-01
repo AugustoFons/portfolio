@@ -6,13 +6,13 @@ import MenuMobile from './MenuMobile'
 const Navbar = () => {
     return (
         <nav className='flex justify-center lg:justify-start navbar'>
-            <div className='w-full content-center flex flex-row items-center justify-between py-1'>
+            <div className='w-full content-center flex flex-row items-center justify-between py-0'>
                 <div className='w-full flex justify-start'>
                     <Link href='/'>
                         <Image
                         src='/lg.png'
-                        width={190}
-                        height={100}
+                        width={170}
+                        height={80}
                         alt='Augusto Fons'
                         />
                     </Link>

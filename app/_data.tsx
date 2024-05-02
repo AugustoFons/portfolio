@@ -148,5 +148,15 @@ export const data = [
         gitHub: "https://github.com/AugustoFons/django-json-server",
         category: "Python | Django",
         order: 16
+    },
+    {
+        id: "17",
+        title: "Proyecto SEO",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1714664770/dealsplaces_rzq5fx.jpg",
+        description: "Este es un proyecto que venía pensando hace bastante tiempo. Para esta página, utilicé como base un frontend que ya había desarrollado en un proyecto anterior y le adapté la idea de un sitio web que muestra ofertas de productos o servicios digitales de plataformas como Amazon o Ebay, que ofrecen programas de afiliados. Es decir, que si un usuario compra un producto en esas plataformas después de ser derivado desde esta página, me correspondería una comisión. También enlacé esta página con Google Analytics y Google Adsense para que, en caso de generarse tráfico real en la página, pueda generar ingresos mediante publicidad. Para probar el funcionamiento de la página, compré un dominio (inicialmente el nombre de la página era diferente, pero lo adapté al nombre de dominio que encontré disponible) y la alojé en Firebase Hosting, lo que me obligó a aprender mucho sobre el uso de dominios y las herramientas de Firebase. Me dediqué especialmente a trabajar en el SEO para posicionar la página, utilizando metadatos dinámicos y estáticos, imágenes OG dinámicas y estáticas, sitemaps dinámicos, archivo robots.txt, entre otras cosas. Actualmente superviso la página con el fin de verificar si cumple con mis expectativas, y en caso afirmativo, escalar un poco más el proyecto, tanto en términos de lo que ofrece como en la creación de una base de datos adecuada, ya que en esta etapa de prueba los datos de cada producto están alojados en un archivo JSON. **Por el momento, el repositorio está en privado.**",
+        siteUrl: "https://dealsplaces.com/",
+        gitHub: "https://github.com/AugustoFons/",
+        category: "Next.JS | Firebase",
+        order: 17
     }
 ];

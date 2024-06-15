@@ -74,7 +74,7 @@ export const data = [
         title: "Libros P Backend",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114398/backendLibros_eunuo1.jpg",
         description: "Esta base de datos realizada en nodeJS con express y MongoDB, forma parate del proyecto final (backend) que realize en Academia Numen. Para esta base de datos, consumi los libros de programacion de la api de OpenLibra y los guarde en MongoDB. Conjuntamente desarrolle un Frontend que muestra cada uno de los libros y tambien mediante formularios estos se pueden editar o agregar nuevos libros, como así tambien se pueden agregar comentarios a cada libro. Ver más info en el README de gitHub.",
-        siteUrl: "https://ochre-fawn-wrap.cyclic.app/get",
+        siteUrl: "https://backend-libros-proyecto-final.vercel.app",
         gitHub: "https://github.com/AugustoFons/backendLibros-proyectoFinal",
         category: "Node | MongoDB",
         order: 9

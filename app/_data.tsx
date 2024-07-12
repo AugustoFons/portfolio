@@ -161,7 +161,7 @@ export const data = [
     },
     {
         id: "18",
-        title: "Cuaderno WEB",
+        title: "Cuaderno WEB(En construcción)",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1719273192/cweb_sdgsae.png",
         description: "Proyecto que estoy desarrollando actualmente, mi idea inicial con este sitio es poder simular la escritura en un cuaderno de la forma más realista posible para permitir por ejemplo, tomar apuntes, realizar tareas, y brindar alternativas, principalmente a estudiantes que utilizen un cuaderno físico como herramienta de estudio. Esta web la estoy desarrollando con nextJS, utilizando la libreria de edicion de texto Lexical en su versión Verbum. La libreria esta desarrollada en TypeScript por lo que la estoy personalizando usando este lenguaje y adaptandola al diseño de la página realizado con CSS y Tailwind. Aún me falta agregar muchas funcionalidades que tengo en mente, por ejemplo: Opciones de tipos de hojas, agregar cantidad de hojas, imprimirlas en PDF, persitencia del texto, entre otras. Tambien si consiguiera usuarios frecuentes de la web, pensaria en una base de datos para guardar textos o brindar más posibilidades.",
         siteUrl: "https://cuaderno-web.vercel.app/",

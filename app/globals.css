@@ -35,6 +35,9 @@
 }
 
 /* filtro hover para links, iconos.. */
+.filterColor {
+  transition: all 0.3s ease-in;
+}
 .filterColor:hover {
   filter: brightness(0) saturate(100%)  invert(61%) sepia(70%) saturate(1254%) hue-rotate(1deg) brightness(106%) contrast(104%);
   cursor: pointer;
@@ -90,7 +93,7 @@
 
 .animacionMiFoto {
   transform: rotateY(0deg);
-  animation: animacion1 8s ;
+  animation: animacion1 8s ease ;
   animation-direction: alternate;
 }
 
@@ -170,7 +173,7 @@
 
 /* hover links efecto circulo amarillo */
 .linkBorder {
-  transition: color 0.25s 0.0833333333s;
+  transition: all 1.4s;
   position: relative;
 }
 .linkBorder::before, .linkBorder::after {

@@ -42,7 +42,7 @@ const AboutMe = () => {
                         height={100}
                         src='/fotomy.png'
                         alt="Mi Foto"
-                        className="rounded-full pt-3 pb-2 lg:pb-0 lg:hidden hover:scale-125 hover:backdrop-blur-sm"
+                        className="rounded-full pt-3 pb-2 lg:pb-0 lg:hidden hover:scale-125 hover:backdrop-blur-sm transition-all duration-[2s] ease-linear"
                         quality="100"
                         />  
                 </div>
@@ -65,7 +65,7 @@ const AboutMe = () => {
                     height={160}
                     src='/fotomy.png'
                     alt="Mi Foto"
-                    className="pt-5 hover:scale-125 hover:backdrop-blur-sm"
+                    className="pt-5 hover:w-[450px] hover:h-[auto] hover:backdrop-blur-sm transition-all duration-[2s] ease-linear"
                     quality="100"
                     />  
             </div>

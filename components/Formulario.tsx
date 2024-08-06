@@ -39,7 +39,7 @@ const Formulario: React.FC = () => {
     return (
         <section id='contacto' className='min-h-fit flex flex-col justify-start mb-0 mt-3 lg:mt-1 contactoResponsive'>
             <div className="relative py-4 sm:mt-7 w-full lg:max-w-xl sm:mx-auto group">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#ffc954b3] to-[#ffd677b3] group-hover:from-[#ffae00b3] group-hover:to-[#FFCA54] shadow-xl transform skew-y-6 sm:skew-y-0 rotate-6 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#ffc954b3] to-[#ffd677b3] group-hover:from-[#ffae00b3] group-hover:to-[#FFCA54] shadow-xl transform skew-y-6 sm:skew-y-0 rotate-6 rounded-3xl transition-all duration-[1s] ease-in"></div>
                 <section className="relative py-4 bg-white shadow-lg sm:rounded-3xl sm:py-10 px-6 xs:px-8 sm:px-20 lg:px-14">
                         <div className='flex flex-col items-center'>
                             <h1 className="fuenteTitulo text-4xl md:text-5xl text-center w-full">Contacto:</h1>
@@ -48,7 +48,7 @@ const Formulario: React.FC = () => {
                                 width={144}
                                 height={80}
                                 alt="line"
-                                className='-ml-3 -translate-y-1 group-hover:filterColorCv'
+                                className='-ml-3 -translate-y-1 group-hover:filterColorCv transition-all duration-[0.8s] ease-in'
                             />
                         </div>
                         <form ref={form} onSubmit={sendEmail} className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
@@ -110,7 +110,7 @@ const Formulario: React.FC = () => {
                                         disabled
                                         type="submit" 
                                         value="Send" 
-                                        className="flex  items-center gap-1 bg-[#FFCA54] group-hover:bg-[#FFAF00] text-white rounded-md px-2 py-1"
+                                        className="flex  items-center gap-1 bg-[#FFCA54] group-hover:bg-[#FFAF00] text-white rounded-md px-2 py-1 transition-all duration-[2s] ease-in"
                                     >
                                         Enviar
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">

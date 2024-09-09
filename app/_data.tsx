@@ -1,6 +1,6 @@
 export const data = [
     {
-        id: "2",
+        id: "1",
         title: "EncriptaTor",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114398/encriptador-challenge_yvimvp.jpg",
         description: "Encriptador de texto que realize para un Challenge del curso de Principiante en Programación de Oracle Next Education. Es uno de los primeros sitios que desarrolle con javaScript, no es responsive.",
@@ -10,7 +10,7 @@ export const data = [
         order: 2
     },
     {
-        id: "3",
+        id: "2",
         title: "Red Social",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1691114399/redSocial_v7kflq.jpg",
         description: "Esta es la idea/diseño de una red social para Artistas. Este proyecto lo hice en mis primeras clases de HTML y CSS en Academia Numen, en el cual aplique las cosas que aprendi por primera vez de HTML y CSS. En algún momento me gustaria corregir y mejorar el codigo como asi agregar nuevas cosas ya que es uno de mis primeros proyectos.",
@@ -18,6 +18,16 @@ export const data = [
         gitHub: "https://github.com/AugustoFons/RedSocial",
         category: "HTML | CSS",
         order: 3
+    },
+    {
+        id: "3",
+        title: "Sonic Code",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1724202545/scode_lfls0f.jpg",
+        description: "Landing page que realice para repasar conceptos de HTML & CSS, y tambien sobre el uso de animaciones, transiciones, flexbox, grid, entre otras cosas.",
+        siteUrl: "https://augustofons.github.io/sonicCOde/",
+        gitHub: "https://github.com/AugustoFons/sonicCOde",
+        category: "HTML | CSS",
+        order: 4
     },
     {
         id: "4",

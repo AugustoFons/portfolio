@@ -179,4 +179,4 @@ export const data = [
         category: "Prueba Técnica | Next.JS",
         order: 19
     }
-];
+]

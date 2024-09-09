@@ -132,8 +132,8 @@ export const data = [
     {
         id: "15",
         title: "Página Personalizada",
-        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1708922673/bernard_uohh4x.jpg",
-        description: "Esta Web la estoy programando actualmente para un familiar el cual es músico. Actualmente esta en construcción la página ya que me faltan completar secciones y conectar la página a un backend mediante al cual pueda actualizar contenido del blog con formularios. Para consumir los videos de Youtube utilizé la herramienta RapidApi, para los estilos he usado tambien MUI y herramientas como swiper",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1725842167/apber_s7rgnu.png",
+        description: "Esta Web la estoy programando para un familiar el cual es músico. Actualmente la página esta en construcción ya que falta crear contenido para algunas secciones. Para consumir los videos de Youtube utilizé la herramienta RapidApi, para los estilos he usado tambien MUI y herramientas como swiper. Adicionalmente en la sección de blog cree una conexion a una hoja de google sheets, a la que el administrador de la página puede acceder de forma privada y agregar contenido a la sección.",
         siteUrl: "https://bernar-app.vercel.app/",
         gitHub: "https://github.com/AugustoFons/appMusica-Personalizada",
         category: "En construcción | React",
@@ -161,12 +161,22 @@ export const data = [
     },
     {
         id: "18",
-        title: "Cuaderno WEB(En construcción)",
+        title: "Cuaderno WEB (En construcción)",
         image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1719273192/cweb_sdgsae.png",
         description: "Proyecto que estoy desarrollando actualmente, mi idea inicial con este sitio es poder simular la escritura en un cuaderno de la forma más realista posible para permitir por ejemplo, tomar apuntes, realizar tareas, y brindar alternativas, principalmente a estudiantes que utilizen un cuaderno físico como herramienta de estudio. Esta web la estoy desarrollando con nextJS, utilizando la libreria de edicion de texto Lexical en su versión Verbum. La libreria esta desarrollada en TypeScript por lo que la estoy personalizando usando este lenguaje y adaptandola al diseño de la página realizado con CSS y Tailwind. Aún me falta agregar muchas funcionalidades que tengo en mente, por ejemplo: Opciones de tipos de hojas, agregar cantidad de hojas, imprimirlas en PDF, persitencia del texto, entre otras. Tambien si consiguiera usuarios frecuentes de la web, pensaria en una base de datos para guardar textos o brindar más posibilidades.",
         siteUrl: "https://cuaderno-web.vercel.app/",
         gitHub: "https://github.com/AugustoFons/cuadernoWeb",
         category: "En construcción | Next.JS",
         order: 18
+    },
+    {
+        id: "19",
+        title: "API Marvel",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1725841631/ApiMarvel_xsxr7l.png",
+        description: "Este trabajo es parte de una prueba técnica, que realize para una posición de Desarrollador Web Full Stack, en la que se me pidio consumir la API de Marvel. La web permite crear personajes a partir del objeto que devuelve la solicitud a la API, en este caso por limitaciones, de esta version de la API, trae solo algunos personajes y los guarda en el Local Storage del navegador pudiendo realizar operaciones CRUD sobre ellos. En este trabajo me enfoque principalmente en las funciones que me pedian, para los estilos use los de la página principal de NextJS y los fui adaptando a la página. En el entorno local suele demorar la solicitud a la API, pero en el deploy en firebase esto no ocurre y funciona adecuadamente (entiendo que esta diferencia puede ser por algún factor como la distancia al servidor de la API)",
+        siteUrl: "https://prueba-ut.web.app/",
+        gitHub: "https://github.com/AugustoFons/pruebaTecnica-Ut",
+        category: "Prueba Técnica | Next.JS",
+        order: 19
     }
 ];

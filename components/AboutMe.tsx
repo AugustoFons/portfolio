@@ -50,7 +50,7 @@ const AboutMe = () => {
                         <span className="py-1 text-base lg:text-2xl font-base rounded-lg letterSpecial m-0">
                             {`¡Bienvenido! `} 
                         </span>
-                        Me llamo Augusto Fons. Vivo en La ciudad de La Plata, Argentina, y soy desarrollador web Full Stack. En este portfolio intento reflejar mi dedicación a la programación, y a la creación de soluciones digitales, compartiendo varios de los proyectos en los que trabajo, y a través de los cuales aprendo día a día. Actualmente me interesa ser parte de proyectos y oportunidades en los cuales pueda potenciar, desarrollar y aplicar mis conocimientos y habilidades. Para saber más sobre mí, pueden descargar mi CV o ver mis redes sociales que dejaré en la sección de contacto.
+                        Me llamo Augusto Fons. Vivo en La ciudad de La Plata, Argentina, y soy desarrollador web Full Stack. En este portfolio intento reflejar mi dedicación a la programación, y a la creación de soluciones digitales, compartiendo varios de los proyectos en los que trabajo, y a través de los cuales aprendo día a día. Actualmente me interesa ser parte de proyectos y oportunidades en los cuales pueda potenciar, desarrollar y aplicar mis conocimientos y habilidades. Para saber más sobre mí, mis estudios y experiencia profesional, pueden descargar mi CV o ver mis redes sociales que dejaré en la sección de contacto.
                     </p>
                 <InView onChange={handleIntersection}>
                     <p className="justify-center text-center pt-1 text-base lg:text-2xl font-base rounded-lg letterSpecial">

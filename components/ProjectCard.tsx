@@ -13,7 +13,7 @@ const ProjectCard = ({ title, description, image, siteUrl, gitHub, category, id,
                     width={414}
                     height={314}
                     alt={title}
-                    className="w-ful h-full rounded-2xl object-cover"
+                    className="w-full h-full rounded-2xl object-cover"
                     />
 
                     <div className="flex flex-col card-title">

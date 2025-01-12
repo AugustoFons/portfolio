@@ -188,5 +188,15 @@ export const data = [
         gitHub: "https://github.com/AugustoFons/pruebaTecnica-Ut",
         category: "Prueba Técnica | Next.JS",
         order: 19
+    },
+    {
+        id: "20",
+        title: "Dino DB",
+        image: "https://res.cloudinary.com/ddgzljvfv/image/upload/v1736702824/dinooo_begol6.png",
+        description: "Este sitio hago uso de una modificación del clásico juego T-Rex Runner de Google. Aquí lo presento con nuevos estilos y código adicional para interactuar con el juego guardando y mostrando los puntajes obtenidos mediante Express, EJS y SQL.",
+        siteUrl: "https://dinodb.vercel.app/",
+        gitHub: "https://github.com/AugustoFons/game-express",
+        category: "Express con EJS | Turso SQL",
+        order: 20
     }
 ];
